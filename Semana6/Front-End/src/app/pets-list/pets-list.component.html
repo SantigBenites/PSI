@@ -1,0 +1,5 @@
+<ul class="Pets">
+    <li *ngFor="let Pet of Pets">
+    <span class="name">{{Pet.name}}</span>
+    <button type="button" class="bind-button" (click)="bind(Pet)">Bind</button>
+</ul>
