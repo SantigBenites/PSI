@@ -1,0 +1,31 @@
+html, body ,ul{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-top: 0%;
+}
+
+ul{
+    padding-inline-start: 0%;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    display: flex;
+    flex-direction: row;
+    list-style-type : none;
+    width: 100%;
+}
+
+ul li{
+    background-color: #eeeff2;
+    height: 150px;
+    width: 100px;
+    margin: 10px;
+    border-left: 10px dotted #D0D0FF;
+    cursor: grab;
+}
+
+li:last-child{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

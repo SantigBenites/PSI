@@ -1,0 +1,42 @@
+html, body ,ul{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-top: 0%;
+}
+
+ul{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    list-style-type : none;
+}
+
+ul li{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    text-align: center;
+    text-align-last: center;
+    display: list-item;
+    border-top: 1px solid #687291;
+}
+
+li:nth-child(even) {
+    background: #dfe1e7;
+}
+
+
+li:nth-child(odd) {
+    background: #eeeff2;
+}
+
+li:last-child{
+    line-height: 100px;
+    border: 4px solid black;
+    background: #687291;
+}
