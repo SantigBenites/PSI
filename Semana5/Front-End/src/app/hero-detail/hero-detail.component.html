@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero._id}}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+  </div>
+  <div>
+  <div>
+    <label for="hero-name">Pet name: </label>
+    <app-pets-list *ngIf="hero.pet == null" [hero]="hero" ></app-pets-list></div>
+    <div *ngIf="hero.pet != null" >{{hero.pet.name}}</div>
+    <button *ngIf="hero.pet != null" type="button" class="unbind-button" (click)="unbindPet()">Unbind</button>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>
